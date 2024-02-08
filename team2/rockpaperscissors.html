@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="rockpaperscissors.css" type="text/css">
+        <script src="rockpaperscissors.js"></script>
+    </head>
+    <body>
+        <section id="game">
+            <h1>TEAM 2 ROCK PAPER SCISSORS</h1>
+            <div class="gameWinnerMessage winner">
+                <h1 id="gameWinner"></h1>
+            </div>
+            <div class="roundWinnerMessage winner">
+                <h1 id="roundWinner"></h1>
+            </div>
+            <p id="round"><strong>Round:</strong> <span id="round-number"></span></p>
+            <div class="playerScore">
+                <p id="p1Score">Player 1 Score: <span id="p1ScoreNum"></span></p>
+                <p id="p2Score">Player 2 Score: <span id="p2ScoreNum"></span></p>
+            </div>
+            <div class="buttons">
+                <button id="rock" class="selection-button" onclick="playRound('rock')">ROCK</button>
+                <button id="paper" class="selection-button" onclick="playRound('paper')">PAPER</button>
+                <button id="scissors" class="selection-button" onclick="playRound('scissors')">SCISSORS</button>
+            </div>
+        </section>
+    </body>
+</html>

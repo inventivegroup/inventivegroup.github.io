@@ -1,0 +1,53 @@
+section {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+section .winner h1 {
+    color: red
+}
+
+section .buttons {
+    margin-top: 40px;
+    display: flex;
+    width: 500px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+section .buttons button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+section .buttons button#rock {
+    background: url("https://t3.ftcdn.net/jpg/01/23/14/80/360_F_123148069_wkgBuIsIROXbyLVWq7YNhJWPcxlamPeZ.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+section .buttons button#paper {
+    background: url("https://upload.wikimedia.org/wikipedia/commons/2/23/US_one_dollar_bill%2C_obverse%2C_series_2009.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+section .buttons button#scissors {
+    background: url("https://thumbs.dreamstime.com/b/scissors-top-view-w-path-446167.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
