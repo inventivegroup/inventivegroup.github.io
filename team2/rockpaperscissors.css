@@ -1,3 +1,22 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    background: #000;
+}
+
+#game {
+    background: #fff;
+    border-radius: 30px;
+    padding: 40px 40px 80px;
+}
+
+.roundWinnerMessage {
+    text-align: center;
+}
+
 section {
     width: 1200px;
     margin: auto;
@@ -50,4 +69,14 @@ section .buttons button#scissors {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+#reset {
+    margin-top: 30px;
+}
+
+#reset button {
+    display: none;
+    background: #ccc;
+    color: #000;
 }
