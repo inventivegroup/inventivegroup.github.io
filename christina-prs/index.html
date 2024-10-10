@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christina's Rock Paper Scissors Adventure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+        .game-font {
+            font-family: 'Bangers', cursive;
+        }
+        body {
+            background: linear-gradient(to bottom, #ef4444, #7e22ce);
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <header class="py-6">
+        <h1 class="text-4xl game-font text-center text-white drop-shadow-lg">Christina's Rock Paper Scissors Adventure</h1>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="bg-white bg-opacity-80 rounded-lg shadow-lg p-8 max-w-2xl mx-auto">
+            <h2 class="text-3xl game-font mb-6 text-center text-purple-700">Choose Your Weapon!</h2>
+            <div id="player-turn" class="text-center text-2xl mb-4">Player 1's Turn</div>
+            <div class="flex justify-center space-x-6 mb-8">
+                <button class="weapon-btn bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-4 px-8 rounded-full transform hover:scale-110 transition duration-200">
+                    <span class="text-4xl">🗿</span>
+                    <span class="block mt-2">Rock</span>
+                </button>
+                <button class="weapon-btn bg-green-300 hover:bg-green-400 text-gray-800 font-bold py-4 px-8 rounded-full transform hover:scale-110 transition duration-200">
+                    <span class="text-4xl">📜</span>
+                    <span class="block mt-2">Paper</span>
+                </button>
+                <button class="weapon-btn bg-red-300 hover:bg-red-400 text-gray-800 font-bold py-4 px-8 rounded-full transform hover:scale-110 transition duration-200">
+                    <span class="text-4xl">✂️</span>
+                    <span class="block mt-2">Scissors</span>
+                </button>
+            </div>
+            <div id="game-status" class="text-center text-xl font-semibold mb-4">
+                Ready to play? Player 1, choose your weapon above!
+            </div>
+            <div id="score" class="text-center text-lg">
+                Player 1 Score: 0 | Player 2 Score: 0
+            </div>
+            <div id="round" class="text-center mt-2">
+                Round: 1 of 5
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-auto py-3 inventive-footer">
+        <div class="container mx-auto text-center text-white">
+            &copy; 2024 Christina's Epic RPS Battle
+        </div>
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+</html>
